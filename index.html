@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="left-section">
+        <div class="logo">
+            <img class="logo-image" src="./images/odin_logo.png" alt="The Odin Project's logo">
+            <h1 class="logo-text">ODIN</h1>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="right-header">
+            <p class="p1">This is not a real online service! you know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started!</p>
+            <p>You <span>know</span> you want to.</p>
+        </div>
+        <div class="right-body">
+            <p>Let's do this!</p>
+            <form action="" method="post" id="form">
+                <div class="input-container">
+                    <div class="first-row">
+                        <div class="FN">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="LN">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        <div class="email">
+                            <label for="mail">EMAIL</label>
+                            <input type="email" name="mail" id="mail" required>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" min="7" max="10" required>
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <div class="pw">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" for="password" id="PASSWORD" required>
+                        </div>
+                        <div class="cpw">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" for="confirm-password" id="PASSWORD">
+                        </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="right-footer">
+        <button type="submit" form="form">Create Account</button>
+        <p>Already have an account? <a href="0">Log in</a></p>
+    </div>
+
+</body>
+</html>
